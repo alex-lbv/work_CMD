@@ -1,0 +1,50 @@
+*,
+::before,
+::after {
+  box-sizing: border-box !important;
+  outline: none;
+}
+
+body {
+  position: relative;
+  font: normal 18px/28px Manrope;
+  color: #000000;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.subtitle {
+  font: 700 36px/40px Manrope;
+
+  &--ligh-blue {
+    span {
+      color: #00a9e0;
+    }
+  }
+
+  &--dark-blue {
+    span {
+      color: #003594;
+    }
+  }
+
+  &--pink {
+    span {
+      color: #f8485e;
+    }
+  }
+}
