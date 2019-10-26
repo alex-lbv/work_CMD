@@ -45,6 +45,13 @@
 
 		a {
 			color: #ffffff;
+			border-bottom: 1px solid transparent;
+			transition: border .3s;
+
+			&:hover:not(.header__logo) {
+				border-color: #ffffff;
+			}
+
 
 			@include screen(xl) {
 				margin-bottom: 20px;
@@ -121,10 +128,14 @@
 	}
 
 	.btn {
-		padding: 20px 15px 17px;
+		padding: 19px 15px 20px;
 		max-width: 265px;
 		color: #ffffff;
 		background-color: #00a9e0;
+
+		&:hover {
+			background-color: #f8485e;
+		}
 
 		@include screen(xl) {
 			margin: auto;

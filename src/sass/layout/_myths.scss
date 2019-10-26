@@ -28,6 +28,12 @@
 			border: 1px solid #00a9e0;
 			font: normal 18px/24px Manrope;
 			color: #00a9e0;
+
+			&:hover {
+				color: #ffffff;
+				border-color: transparent;
+				background-color: #f8485e;;
+			}
 		}
 
 		.swiper-wrapper {
