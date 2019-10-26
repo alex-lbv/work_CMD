@@ -246,6 +246,74 @@
 
     <div id="test" class="test">
       <div class="uk-container">
+        <h3 class="subtitle subtitle--light-blue"><span>Оценка риска</span> развития сахарного диабета 2 типа</h3>
+        <div class="uk-flex uk-child-width-1-2 uk-margin-large-bottom@l">
+          <div>
+            <p class="uk-margin-bottom">Пройдите тест FINDRISC* на оценку степени риска развития сахарного диабета 2
+              типа. Лучше предупредить и начать своевременное лечение, это позволит снизить риск развития осложнений.
+            </p>
+
+            <p>Ответьте на все 9 вопросов. Для каждого вопроса выберите один ответ и отметьте его.</p>
+          </div>
+          <span class="uk-padding-large-left@l">*The Finnish Diabetes Risk Score</span>
+        </div>
+
+        <div class="test__swiper uk-flex uk-padding-top@l">
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Swiper -->
+          <div class="test__container uk-width-expand@l uk-padding-large-right@l">
+            <div class="swiper-wrapper">
+              <!-- Test-1 -->
+              <div class="swiper-slide uk-flex uk-child-width-1-2">
+                <span>Укажите Ваш пол.</span>
+                <ul class="uk-flex uk-flex-column">
+                  <li class="uk-flex">
+                    <input id="male" type="radio" name="gender">
+                    <label for="male">Женщина</label>
+                  </li>
+                  <li class="uk-flex">
+                    <input id="female" type="radio" name="gender">
+                    <label for="female">Мужчина</label>
+                  </li>
+                </ul>
+              </div>
+              <!-- Test-2 -->
+              <div class="swiper-slide">Slide 3</div>
+              <!-- Test-3 -->
+              <div class="swiper-slide">Slide 3</div>
+              <!-- Test-4 -->
+              <div class="swiper-slide">Slide 4</div>
+              <!-- Test-5 -->
+              <div class="swiper-slide">Slide 5</div>
+              <!-- Test-6 -->
+              <div class="swiper-slide">Slide 6</div>
+              <!-- Test-7 -->
+              <div class="swiper-slide">Slide 7</div>
+              <!-- Test-8 -->
+              <div class="swiper-slide">Slide 8</div>
+              <!-- Test-9 -->
+              <div class="swiper-slide uk-flex uk-child-width-1-2">
+                <span>Расчет индекса массы тела.</span>
+                <ul class="uk-flex uk-flex-column">
+                  <li class="uk-flex">
+                    <label for="weight">Ваш вес, кг:</label>
+                    <input id="weight" type="text">
+
+                  </li>
+                  <li class="uk-flex">
+                    <label for="height">Ваш рост, см:</label>
+                    <input id="height" type="text">
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="swiper-next btn" type="button">Далее</button>
+        </div>
 
       </div>
     </div>
