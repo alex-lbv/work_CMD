@@ -1,0 +1,133 @@
+.header {
+	position: relative;
+	color: #ffffff;
+	background-color: #003594;
+	overflow: hidden;
+
+	&::after {
+		content: "";
+		position: absolute;
+		background-size: contain;
+
+		@include screen(xl) {
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url("../img/pic/bg/bg-top-mobile.png") no-repeat;
+		}
+
+		@include screen(l) {
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 1150px;
+			height: 100%;
+			background: url("../img/pic/bg/bg-top.png") no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__top {
+		position: relative;
+		z-index: 1;
+
+		@include screen (xl) {
+			padding: 15px 0;
+			margin-bottom: 30px;
+		}
+
+		@include screen (l) {
+			padding: 45px 0 0;
+			margin-bottom: 60px;
+		}
+
+		a {
+			color: #ffffff;
+
+			@include screen(xl) {
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				font: normal 16px/normal Manrope;
+			}
+
+			@include screen(l) {
+				font: normal 15px/normal Manrope;
+			}
+		}
+
+		img {
+			@include screen(xl) {
+				width: 190px;
+				height: 30px;
+			}
+		}
+	}
+
+	&__bottom {
+		position: relative;
+		z-index: 1;
+
+		@include screen(xl) {
+			padding: 0 0 40px;
+		}
+
+		@include screen(l) {
+			padding: 0 0 135px 450px;
+		}
+
+		br {
+			@include screen(xl) {
+				display: none;
+			}
+		}
+
+		h1 {
+			color: #ffffff;
+
+			@include screen(xl) {
+				margin-bottom: 40px;
+				font: 700 36px/48px Manrope;
+			}
+
+			@include screen(l) {
+				margin-bottom: 65px;
+				font: 700 86px/96px Manrope;
+			}
+
+			span {
+				color: #f8485e;
+			}
+		}
+
+		p {
+			color: #ffffff;
+
+			@include screen(xl) {
+				margin-bottom: 30px;
+				font: normal 18px/28px Manrope;
+			}
+
+			@include screen(l) {
+				margin-bottom: 40px;
+				font: normal 24px/40px Manrope;
+			}
+
+			span {
+				color: #f8485e;
+			}
+		}
+	}
+
+	.btn {
+		padding: 20px 15px 17px;
+		max-width: 265px;
+		color: #ffffff;
+		background-color: #00a9e0;
+
+		@include screen(xl) {
+			margin: auto;
+		}
+	}
+}

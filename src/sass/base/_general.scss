@@ -7,10 +7,17 @@
 
 body {
   position: relative;
-  font: normal 18px/28px Manrope;
   color: #000000;
   background-color: #ffffff;
   overflow-x: hidden;
+
+  @include screen(xl) {
+    font: normal 16px/24px Manrope;
+  }
+
+  @include screen(l) {
+    font: normal 18px/28px Manrope;
+  }
 }
 
 a {
@@ -28,7 +35,13 @@ img {
 }
 
 .subtitle {
-  font: 700 36px/40px Manrope;
+  @include screen(xl) {
+    font: 700 28px/32px Manrope;
+  }
+
+  @include screen(l) {
+    font: 700 36px/40px Manrope;
+  }
 
   &--ligh-blue {
     span {

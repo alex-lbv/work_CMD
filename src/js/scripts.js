@@ -4,4 +4,5 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   //= components/swiper-slider.js
+  //= components/calc.js
 });

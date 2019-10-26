@@ -1,6 +1,301 @@
 //= components/head.html
 
 <body>
+  <header class="header">
+    <div class="uk-container">
+      <div class="header__top uk-flex uk-flex-between uk-flex-middle@l uk-flex-column@s">
+        <div>
+          <a href="#">
+            <img src="img/pic/logo/cmd-logo.png" width="245" height="42" alt="">
+          </a>
+        </div>
+
+        <ul class="uk-flex uk-flex-around uk-width-1-2 uk-visible@l">
+          <li>
+            <a href="#info" uk-scroll>Что такое диабет</a>
+          </li>
+          <li>
+            <a href="#signs" uk-scroll>Признаки</a>
+          </li>
+          <li>
+            <a href="#myths" uk-scroll>Мифы</a>
+          </li>
+          <li>
+            <a href="#test" uk-scroll>Оценка риска</a>
+          </li>
+          <li>
+            <a href="#geo" uk-scroll>Где сдать</a>
+          </li>
+        </ul>
+
+        <div>
+          <a class="header__contact" href="tel:88007077881">8 800 707 7881</a>
+        </div>
+      </div>
+
+      <div class="header__bottom uk-flex uk-flex-column">
+        <h1>Оцените свой <br>риск развития <br><span>сахарного <br>диабета</span></h1>
+        <p>Пройдите тест и получите промокод <br>на бесплатное скрининговое обследование <br><span>14-17 ноября</span>
+        </p>
+        <a class="btn" href="#">Пройти тест</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="info" class="info uk-container">
+
+      <div class="uk-flex uk-flex-column@s uk-child-width-1-2@l">
+        <div class="info__left">
+          <h3 class="subtitle subtitle--pink"><span>Что такое</span> сахарный диабет?</h3>
+          <p class="uk-margin-bottom">Сахарный диабет (СД) — это хроническое заболевание, которое развивается в тех
+            случаях, когда
+            поджелудочная железа не вырабатывает достаточно инсулина, или когда организм не может эффективно
+            использовать вырабатываемый инсулин.</p>
+
+          <p class="uk-margin-bottom">Инсулин — это гормон, регулирующий уровень сахара в крови. Общим результатом
+            неконтролируемого сахарного
+            диабета является гипергликемия, или повышенный уровень глюкозы (сахара) в крови, что со временем приводит
+            к серьезному повреждению многих систем организма.</p>
+
+          <p>Сахарный диабет приводит к повреждению сердца, кровеносных сосудов, глаз, почек и нервной системы.
+            Известно, что развитию СД 2 типа, как правило, предшествуют изменения в организме, в медицине именуемые
+            предиабетом.</p>
+        </div>
+
+        <div class="info__right uk-flex uk-flex-column uk-flex-middle">
+          <img src="img/pic/circle.png" width="312" height="312" alt="">
+          <span class="uk-margin-bottom">14 ноября</span>
+          <p>Всемирный день <br>борьбы с диабетом</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="signs" class="signs">
+      <div class="uk-container">
+        <div class="uk-flex uk-flex-column">
+          <h3 class="subtitle subtitle--dark-blue"><span>Признаки</span> сахарного диабета</h3>
+          <ul class="uk-flex uk-flex-column@s uk-flex-center">
+            <li class="uk-flex uk-flex-column">
+              <img src="img/pic/sign-1.jpg" width="224" height="224" alt="">
+              <span>Кожный зуд</span>
+            </li>
+            <li class="uk-flex uk-flex-column">
+              <img src="img/pic/sign-2.jpg" width="224" height="224" alt="">
+              <span>Чувство голода</span>
+            </li>
+            <li class="uk-flex uk-flex-column">
+              <img src="img/pic/sign-3.jpg" width="224" height="224" alt="">
+              <span>Сильная жажда</span>
+            </li>
+            <li class="uk-flex uk-flex-column">
+              <img src="img/pic/sign-4.jpg" width="224" height="224" alt="">
+              <span>Тошнота</span>
+            </li>
+          </ul>
+
+          <ul class="uk-flex uk-flex-column@s uk-flex-center">
+            <li class="uk-flex uk-flex-column">
+              <img src="img/pic/sign-5.jpg" width="224" height="224" alt="">
+              <span>Частое мочеиспускание</span>
+            </li>
+            <li class="uk-flex uk-flex-column">
+              <img src="img/pic/sign-6.jpg" width="224" height="224" alt="">
+              <span>Неясность зрения</span>
+            </li>
+            <li class="uk-flex uk-flex-column">
+              <img src="img/pic/sign-7.jpg" width="224" height="224" alt="">
+              <span>Сонливость</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="myths" class="myths">
+      <div class="uk-container">
+        <h3 class="subtitle subtitle--pink"><span>5 мифов</span> о сахарном диабете</h3>
+
+        <!-- Swiper -->
+        <div class="myths__container">
+          <div class="swiper-wrapper">
+            <!-- myth-1 -->
+            <div class="swiper-slide uk-flex uk-flex-between uk-flex-column@s">
+              <div class="uk-flex uk-flex-column uk-width-3-5@l uk-margin-bottom@s">
+                <div class="uk-flex uk-flex-middle uk-flex-column@s uk-margin-medium-bottom">
+                  <span class="myths__number uk-margin-medium-right@l uk-margin-medium-bottom@s">1</span>
+                  <p class="myths__title">Я не люблю сладкое, у меня не может быть сахарного диабета.</p>
+                </div>
+
+                <span class="myths__text-blue">Реальность:</span>
+
+                <p class="uk-padding-large-right@l uk-margin-bottom">Сахарный диабет — это
+                  хроническое заболевание, возникающее, когда поджелудочная железа вырабатывает
+                  недостаточное количество гормона инсулина, или когда организм не может полноценно использовать
+                  вырабатываемый им инсулин для своих нужд.</p>
+
+                <p class="uk-padding-large-right@l">Именно инсулин
+                  обеспечивает поддержание нормального уровня глюкозы (сахара) в крови. Из-за
+                  недостаточности инсулина уровень сахара в крови повышается, развивается гипергликемия. Если
+                  повышенный уровень глюкозы длительное время не корректируется с помощью лекарственных препаратов,
+                  возникают различные осложнения, вплоть до слепоты или почечной недостаточности. У каждого второго
+                  пациента с сахарным диабетом с течением времени развивается инфаркт миокарда или ишемический
+                  инсульт.</p>
+              </div>
+              <div class="uk-width-2-5@l uk-text-right@l">
+                <img src="img/pic/myth-1.jpg" width="440" height="440" alt="">
+              </div>
+            </div>
+            <!-- myth-2 -->
+            <div class="swiper-slide uk-flex uk-flex-between uk-flex-column@s">
+              <div class="uk-flex uk-flex-column uk-width-3-5@l uk-margin-bottom@s">
+                <div class="uk-flex uk-flex-middle uk-flex-column@s uk-margin-medium-bottom">
+                  <span class="myths__number uk-margin-medium-right@l uk-margin-medium-bottom@s">2</span>
+                  <p class="myths__title">При хорошем самочувствии можно не измерять уровень глюкозы в крови.</p>
+                </div>
+
+                <span class="myths__text-blue">Реальность:</span>
+
+                <p class="uk-padding-large-right@l">Необходимо регулярно контролировать уровень глюкозы
+                  крови, вне зависимости от самочувствия. Дело в том,
+                  что умеренная гипергликемия может не ощущаться самим пациентом, но способствует развитию осложнений
+                  сахарного диабета. Поэтому только регулярное измерение уровня глюкозы поможет своевременно
+                  диагностировать заболевание, подобрать необходимую дозировку препаратов, оценить их эффективность и
+                  проконтролировать соблюдаемую диету. Также необходимо оценивать и другие показатели крови и мочи.</p>
+              </div>
+              <div class="uk-width-2-5@l uk-text-right@l">
+                <img src="img/pic/myth-2.png" width="440" height="440" alt="">
+              </div>
+            </div>
+            <!-- myth-3 -->
+            <div class="swiper-slide uk-flex uk-flex-between uk-flex-column@s">
+              <div class="uk-flex uk-flex-column uk-width-3-5@l uk-margin-bottom@s">
+                <div class="uk-flex uk-flex-middle uk-flex-column@s uk-margin-medium-bottom">
+                  <span class="myths__number uk-margin-medium-right@l uk-margin-medium-bottom@s">3</span>
+                  <p class="myths__title">Сахарный диабет – это заболевание пожилых людей. Молодые им не болеют.</p>
+                </div>
+
+                <span class="myths__text-blue">Реальность:</span>
+
+                <p class="uk-padding-large-right@l uk-margin-bottom">Заболеть сахарным диабетом можно в любом возрасте,
+                  как в молодом, так и в более зрелом. Сахарный диабет 1 типа развивается из-за разрушения особых клеток
+                  поджелудочной железы (клеток Лангерганса), вырабатывающих инсулин. Снижение инсулина приводит к
+                  повышению концентрации глюкозы в крови. Именно для данного типа сахарного диабета характерно начало
+                  заболевания в детском и подростковом возрасте.</p>
+
+                <p class="uk-padding-large-right@l">Сахарный диабет 2 типа более распространен среди пациентов зрелого
+                  возраста. Эта форма заболевания чаще всего развивается в том случае, когда инсулина достаточно, но
+                  клетки организма теряют чувствительность к его воздействию. А также при других состояниях, чаще всего
+                  связанных с нарушением функции поджелудочной железы и печени.</p>
+              </div>
+              <div class="uk-width-2-5@l uk-text-right@l">
+                <img src="img/pic/myth-3.png" width="440" height="440" alt="">
+              </div>
+            </div>
+            <!-- myth-4 -->
+            <div class="swiper-slide uk-flex uk-flex-between uk-flex-column@s">
+              <div class="uk-flex uk-flex-column uk-width-3-5@l uk-margin-bottom@s">
+                <div class="uk-flex uk-flex-middle uk-flex-column@s uk-margin-medium-bottom">
+                  <span class="myths__number uk-margin-medium-right@l uk-margin-medium-bottom@s">4</span>
+                  <p class="myths__title">Мне назначили диету и таблетки. Если уколы инсулина мне не нужны, то у меня
+                    нет диабета?</p>
+                </div>
+
+                <span class="myths__text-blue">Реальность:</span>
+
+                <p class="uk-padding-large-right@l">Для лечения сахарного диабета не всегда применяют
+                  только инъекции инсулина. Например, при сахарном диабете 2 типа лечение может быть начато с особой
+                  диеты и сахароснижающих препаратов в виде таблеток. Но это не означает, что заболевания нет или что
+                  его не надо контролировать. В любом случае необходимо посещать врача, проверять уровень глюкозы и
+                  других показателей углеводного обмена. Контроль сахара крови позволит избежать развития осложнений.
+                </p>
+              </div>
+              <div class="uk-width-2-5@l uk-text-right@l">
+                <img src="img/pic/myth-4.png" width="440" height="440" alt="">
+              </div>
+            </div>
+            <!-- myth-5 -->
+            <div class="swiper-slide uk-flex uk-flex-between uk-flex-column@s">
+              <div class="uk-flex uk-flex-column uk-width-3-5@l uk-margin-bottom@s">
+                <div class="uk-flex uk-flex-middle uk-flex-column@s uk-margin-medium-bottom">
+                  <span class="myths__number uk-margin-medium-right@l uk-margin-medium-bottom@s">5</span>
+                  <p class="myths__title">Сахарный диабет – это приговор.</p>
+                </div>
+
+                <span class="myths__text-blue">Реальность:</span>
+
+                <p class="uk-padding-large-right@l">Если у вас диагностирован сахарный диабет, не стоит отчаиваться.
+                  Наоборот, ранняя диагностика заболевания и своевременно начатое лечение — это важная отправная точка
+                  для дальнейшей благополучной жизни. Регулярное введение инсулина или прием сахароснижающих препаратов,
+                  своевременный контроль глюкозы и других показателей крови и мочи, соблюдение рациональной диеты с
+                  ограничением простых углеводов, умеренные физические нагрузки и наблюдение врача-эндокринолога – все
+                  это позволит держать уровень глюкозы под контролем, а значит, предотвратить и отсрочить наступление
+                  фатальных осложнений.</p>
+              </div>
+              <div class="uk-width-2-5@l uk-text-right@l">
+                <img src="img/pic/myth-5.png" width="440" height="440" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <button type="button" class="btn swiper-next">Следующий миф</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="test" class="test">
+      <div class="uk-container">
+
+      </div>
+    </div>
+
+    <div id="geo" class="geo">
+      <div class="uk-container">
+        <h3 class="subtitle subtitle--pink"><span>Где пройти</span> обследование</h3>
+        <!-- Switcher -->
+        <ul uk-tab>
+          <li><a href="#">Офисы CMD</a></li>
+          <li><a href="#">Партнеры акции</a></li>
+        </ul>
+
+        <ul class="uk-switcher uk-margin">
+          <li>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+              width="1170" height="600" style="border:0" allowfullscreen></iframe>
+          </li>
+
+          <li>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3482121291!2d36.82510136628262!3d55.581524357416235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1572015714743!5m2!1sru!2sru"
+              width="1170" height="600" style="border:0;" allowfullscreen=""></iframe>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="conditions">
+      <div class="uk-container">
+        <span class="uk-margin-small-bottom">Условия проведения акции:</span>
+        <p class="uk-margin-small-bottom">Акция действует во всех медицинских офисах CMD.</p>
+        <p class="uk-margin-small-bottom">Для того чтобы стать участником акции необходимо:</p>
+
+        <ol class="uk-margin-small-bottom">
+          <li class="uk-margin-small-bottom">С 1 ноября по 17 ноября 2019 г. пройти онлайн-тестирование «Оценка риска
+            развития сахарного диабета 2
+            типа» на <a href="#">www.cmd-online.ru/stopdiabet</a>, по результам тестирования получить уникальный
+            промокод на электронную почту (email).</li>
+          <li>Посетить один из офисов CMD или офис партнеров в период с 14 по 17 ноября 2019 г. и сообщить
+            администратору офиса уникальный промокод, получить бесплатное скрининговое лабораторное исследование
+            («090037 - Глюкоза (Glucose)» или «090042 - Гликозилированный гемоглобин (Glycated Hemoglobin)».</li>
+        </ol>
+
+        <p>Акция не суммируется с другими акциями и скидками, взятие биоматериала по акции бесплатно.</p>
+      </div>
+    </div>
+  </main>
+
   //= components/footer.html
 </body>
 //= components/bottom.html

@@ -1,0 +1,65 @@
+.info {
+	@include screen(xl) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@include screen(l) {
+		padding-top: 80px;
+		padding-bottom: 90px;
+	}
+
+	&__left {
+		.subtitle {
+			@include screen(xl) {
+				margin-bottom: 35px;
+			}
+
+			@include screen(l) {
+				margin-bottom: 55px;
+			}
+		}
+
+		p {
+			@include screen(l) {
+				padding-right: 60px;
+			}
+		}
+	}
+
+	&__right {
+		text-align: center;
+
+		@include screen(xl) {
+			padding-top: 35px;
+		}
+
+		@include screen(l) {
+			padding-top: 80px;
+		}
+
+		img {
+			@include screen(xl) {
+				margin-bottom: 20px;
+				width: 240px;
+				height: 240px;
+			}
+
+			@include screen(l) {
+				margin-bottom: 30px;
+				width: 312px;
+				height: 312px;
+			}
+		}
+
+		span {
+			font: 700 36px/normal Manrope;
+			color: #003594;
+		}
+
+		p {
+			font: normal 24px/32px Manrope;
+			color: #578ad6;
+		}
+	}
+}

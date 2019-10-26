@@ -1,0 +1,31 @@
+.geo {
+	padding: 85px 0 20px;
+
+	.subtitle {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	.uk-tab {
+		a {
+			font: normal 16px/24px Manrope;
+			color: #000000;
+		}
+
+		li.uk-active a {
+			color: #00b388;
+		}
+
+		&>.uk-active>a {
+			border-color: #00b388;
+		}
+	}
+
+	iframe {
+		width: 100%;
+
+		@include screen(xl) {
+			height: 615px;
+		}
+	}
+}

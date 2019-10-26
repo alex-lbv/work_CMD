@@ -1,0 +1,73 @@
+.myths {
+	@include screen(xl) {
+		padding: 60px 0;
+	}
+
+	@include screen(l) {
+		padding: 85px 0 90px;
+	}
+
+	.subtitle {
+		@include screen(xl) {
+			margin-bottom: 35px;
+		}
+
+		@include screen(l) {
+			margin-bottom: 55px;
+		}
+	}
+
+	&__container {
+		position: relative;
+		overflow: hidden;
+
+		.btn {
+			margin: auto;
+			padding: 14px 15px 15px;
+			max-width: 352px;
+			border: 1px solid #00a9e0;
+			font: normal 18px/24px Manrope;
+			color: #00a9e0;
+		}
+
+		.swiper-wrapper {
+			@include screen(xl) {
+				margin-bottom: 35px;
+			}
+
+			@include screen(l) {
+				margin-bottom: 45px;
+			}
+		}
+	}
+
+	&__number {
+		padding: 10px 20px;
+		text-align: center;
+		display: block;
+		border: 10px solid #578ad6;
+		border-radius: 50%;
+		font: 700 36px/40px Manrope;
+	}
+
+	&__title {
+		@include screen(xl) {
+			font: normal 20px/28px Manrope;
+		}
+
+		@include screen(l) {
+			padding-right: 50px;
+			font: normal 24px/32px Manrope;
+		}
+	}
+
+	&__text-blue {
+		color: #578ad6;
+	}
+
+	.subtitle {
+		@include screen(xl) {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,100 @@
+.signs {
+	position: relative;
+	text-align: center;
+	background-color: #8986ca;
+	color: #ffffff;
+
+	@include screen(xl) {
+		padding: 60px 0;
+	}
+
+	@include screen(l) {
+		padding: 85px 0;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+
+		@include screen(xl) {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			width: 100%;
+			height: 1000px;
+			background: url("../img/pic/bg/circle-left-mobile.png") no-repeat;
+			background-size: contain;
+		}
+
+		@include screen(l) {
+			top: 0;
+			left: 0;
+			width: 720px;
+			height: 100%;
+			background: url("../img/pic/bg/circle-left.png") no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.uk-container {
+		position: relative;
+		z-index: 1;
+	}
+
+	.subtitle {
+		@include screen(xl) {
+			margin-bottom: 30px;
+		}
+
+		@include screen(l) {
+			margin-bottom: 55px;
+		}
+	}
+
+	ul {
+		&:first-of-type {
+			@include screen(xl) {
+				margin-bottom: 50px;
+			}
+
+			@include screen(l) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	li {
+		align-items: center;
+		text-align: center;
+
+		&:not(:last-of-type) {
+			@include screen(xl) {
+				margin-bottom: 50px;
+			}
+
+			@include screen(l) {
+				margin-right: 90px;
+			}
+		}
+
+		span {
+			font: 700 20px/24px Manrope;
+		}
+
+		img {
+			border: 8px solid rgba(225, 225, 233, 0.1);
+			overflow: hidden;
+			border-radius: 50%;
+
+			@include screen(xl) {
+				margin-bottom: 25px;
+			}
+
+			@include screen(l) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
