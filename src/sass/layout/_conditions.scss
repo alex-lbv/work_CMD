@@ -1,9 +1,16 @@
 .conditions {
-	padding: 10px 0 85px;
 	font: normal 16px/24px Manrope;
 
+	@include screen(xl) {
+		padding: 10px 0 40px;
+	}
+
+	@include screen(l) {
+		padding: 10px 0 85px;
+	}
+
 	ol {
-		margin-left: 15px; 
+		margin-left: 15px;
 		list-style-type: decimal;
 	}
 

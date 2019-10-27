@@ -1,5 +1,11 @@
 .geo {
-	padding: 85px 0 20px;
+	@include screen(xl) {
+		padding: 40px 0 20px;
+	}
+
+	@include screen(l) {
+		padding: 85px 0 20px;
+	}
 
 	.subtitle {
 		margin-bottom: 60px;
@@ -9,6 +15,7 @@
 	.uk-tab {
 		a {
 			font: normal 16px/24px Manrope;
+			text-transform: unset;
 			color: #000000;
 		}
 

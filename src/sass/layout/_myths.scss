@@ -68,12 +68,17 @@
 	}
 
 	&__text-blue {
+		margin-bottom: 10px;
 		color: #578ad6;
 	}
 
 	.subtitle {
+		text-align: center;
+	}
+
+	img {
 		@include screen(xl) {
-			text-align: center;
+			max-width: 300px;
 		}
 	}
 }
