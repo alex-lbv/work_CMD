@@ -285,4 +285,21 @@
 		}
 	}
 
+	.swiper-wrapper {
+
+		.slide-woman {
+			display: none;
+		}
+
+		&.woman {
+			.slide-man {
+				display: none;
+			}
+
+			.slide-woman {
+				display: block;
+			}
+		}
+	}
+
 }

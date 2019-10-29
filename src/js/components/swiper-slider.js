@@ -27,9 +27,13 @@ $(document).ready(function () {
 				autoHeight: true,
 			}
 		},
-		/* effect: 'fade',
-		fadeEffect: {
-			crossFade: true
-		}, */
+		on: {
+			init: function () {
+				console.log('swiper initialized');
+			},
+			slideChange: function () {
+				console.log('slide changed');
+			},
+		},
 	});
 });

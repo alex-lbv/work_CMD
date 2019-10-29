@@ -1,4 +1,4 @@
-/* $(document).ready(function () {
+$(document).ready(function () {
 	$(".map-btn").on("click", function () {
         $(".map-btn, #map .map-item").removeClass("active");
         $(this).addClass("active");
@@ -296,4 +296,3 @@ $("#insulin_score").text(insulin);
         }
     });
 });
- */
