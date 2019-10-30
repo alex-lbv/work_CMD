@@ -268,7 +268,7 @@
       <div class="uk-container">
         <h3 class="subtitle subtitle--light-blue"><span>Оценка риска</span> развития сахарного диабета 2 типа</h3>
         <!-- блок с тестом -->
-        <div class="">
+        <div class="test__wrap">
           <div class="uk-flex uk-flex-column@s uk-child-width-1-2@l uk-margin-large-bottom@l uk-margin-medium-bottom@s">
             <div class="uk-margin-bottom@s">
               <p class="uk-margin-bottom">Пройдите тест FINDRISC* на оценку степени риска развития сахарного диабета 2
@@ -339,16 +339,16 @@
                       <span class="test__question">КАКОВА ОКРУЖНОСТЬ ВАШЕЙ ТАЛИИ (СМ)?</span>
                       <ul class="test__radio uk-flex uk-flex-column">
                         <li class="uk-flex uk-margin-bottom">
-                          <input class="uk-hidden" id="q3-1" type="radio" name="q3" value="0">
-                          <label for="q3-1">До 94</label>
+                          <input class="uk-hidden" id="q3-1-1" type="radio" name="q3" value="0">
+                          <label for="q3-1-1">До 94</label>
                         </li>
                         <li class="uk-flex uk-margin-bottom">
-                          <input class="uk-hidden" id="q3-2" type="radio" name="q3" value="3">
-                          <label for="q3-2">От 94 до 102</label>
+                          <input class="uk-hidden" id="q3-1-2" type="radio" name="q3" value="3">
+                          <label for="q3-1-2">От 94 до 102</label>
                         </li>
                         <li class="uk-flex">
-                          <input class="uk-hidden" id="q3-3" type="radio" name="q3" value="4">
-                          <label for="q3-3">Более 102</label>
+                          <input class="uk-hidden" id="q3-1-3" type="radio" name="q3" value="4">
+                          <label for="q3-1-3">Более 102</label>
                         </li>
                       </ul>
                     </div>
@@ -360,16 +360,16 @@
                       <span class="test__question">КАКОВА ОКРУЖНОСТЬ ВАШЕЙ ТАЛИИ (СМ)?</span>
                       <ul class="test__radio uk-flex uk-flex-column">
                         <li class="uk-flex uk-margin-bottom">
-                          <input class="uk-hidden" id="q3-1" type="radio" name="q3" value="0">
-                          <label for="q3-1">До 80</label>
+                          <input class="uk-hidden" id="q3-2-1" type="radio" name="q3" value="0">
+                          <label for="q3-2-1">До 80</label>
                         </li>
                         <li class="uk-flex uk-margin-bottom">
-                          <input class="uk-hidden" id="q3-2" type="radio" name="q3" value="3">
-                          <label for="q3-2">От 80 до 88</label>
+                          <input class="uk-hidden" id="q3-2-2" type="radio" name="q3" value="3">
+                          <label for="q3-2-2">От 80 до 88</label>
                         </li>
                         <li class="uk-flex">
-                          <input class="uk-hidden" id="q3-3" type="radio" name="q3" value="4">
-                          <label for="q3-3">Более 88</label>
+                          <input class="uk-hidden" id="q3-2-3" type="radio" name="q3" value="4">
+                          <label for="q3-2-3">Более 88</label>
                         </li>
                       </ul>
                     </div>
@@ -418,11 +418,11 @@
                       давления?</span>
                     <ul class="test__radio uk-flex uk-flex-column">
                       <li class="uk-flex uk-margin-bottom">
-                        <input class="uk-hidden" id="q6-1" type="radio" name="q6" value="0">
+                        <input class="uk-hidden" id="q6-1" type="radio" name="q6" value="2">
                         <label for="q6-1">Да</label>
                       </li>
                       <li class="uk-flex">
-                        <input class="uk-hidden" id="q6-2" type="radio" name="q6" value="2">
+                        <input class="uk-hidden" id="q6-2" type="radio" name="q6" value="0">
                         <label for="q6-2">Нет</label>
                       </li>
                     </ul>
@@ -433,15 +433,14 @@
                   <span class="test__count">7/9</span>
                   <div class="uk-flex uk-flex-column@s uk-child-width-1-2@l">
                     <span class="test__question">Обнаруживали ли у вас когда-либо повышенное содержание глюкозы (сахара)
-                      в
-                      крови?</span>
+                      в крови?</span>
                     <ul class="test__radio uk-flex uk-flex-column">
                       <li class="uk-flex uk-margin-bottom">
-                        <input class="uk-hidden" id="q7-1" type="radio" name="q7" value="0">
+                        <input class="uk-hidden" id="q7-1" type="radio" name="q7" value="5">
                         <label for="q7-1">Да</label>
                       </li>
                       <li class="uk-flex">
-                        <input class="uk-hidden" id="q7-2" type="radio" name="q7" value="5">
+                        <input class="uk-hidden" id="q7-2" type="radio" name="q7" value="0">
                         <label for="q7-2">Нет</label>
                       </li>
                     </ul>
@@ -476,21 +475,21 @@
                     <ul class="test__text uk-flex uk-flex-column">
                       <li class="uk-flex uk-flex-middle uk-flex-between uk-margin-bottom">
                         <label for="weight">Ваш вес, кг:</label>
-                        <input id="weight" type="text">
+                        <input id="weight" type="number">
                       </li>
 
                       <li class="uk-flex uk-flex-middle uk-flex-between">
                         <label for="height">Ваш рост, см:</label>
-                        <input id="height" type="text">
+                        <input id="height" type="number">
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-
             </div>
 
-            <button class="swiper-next btn recalc-btn" type="button">Далее</button>
+            <button class="swiper-next btn" type="button">Далее</button>
+            <button class="btn test-end uk-hidden" type="button" onclick="testResult()">Закончить тест</button>
           </div>
         </div>
 
@@ -498,7 +497,7 @@
         <div class="test__result test__result-1 uk-hidden">
           <div class="test__result-top uk-flex uk-flex-column@s">
             <div class="test__result-current">
-              <span>5</span>
+              <span class="your-points">5</span>
             </div>
             <div class="uk-width-expand">
               <p class="test__result-title uk-margin-bottom">Ваш риск развития сахарного диабета 2-го типа в течение
@@ -535,7 +534,7 @@
         <div class="test__result test__result-2 uk-hidden">
           <div class="test__result-top uk-flex uk-flex-column@s">
             <div class="test__result-current">
-              <span>5</span>
+              <span class="your-points">5</span>
             </div>
             <div class="uk-width-expand">
               <p class="test__result-title uk-margin-bottom">Риск развития сахарного диабета 2 типа <span>ПОВЫШЕН
@@ -574,7 +573,7 @@
         <div class="test__result test__result-3 uk-hidden">
           <div class="test__result-top uk-flex uk-flex-column@s">
             <div class="test__result-current">
-              <span>5</span>
+              <span class="your-points">5</span>
             </div>
             <div class="uk-width-expand">
               <p class="test__result-title uk-margin-bottom">Риск развития сахарного диабета 2 типа
@@ -613,7 +612,7 @@
         <div class="test__result test__result-4 uk-hidden">
           <div class="test__result-top uk-flex uk-flex-column@s">
             <div class="test__result-current">
-              <span>5</span>
+              <span class="your-points">5</span>
             </div>
             <div class="uk-width-expand">
               <p class="test__result-title uk-margin-bottom">Риск развития сахарного диабета 2 типа <span>ВЫСОКИЙ</span>
@@ -651,7 +650,7 @@
         <div class="test__result test__result-5 uk-hidden">
           <div class="test__result-top uk-flex uk-flex-column@s">
             <div class="test__result-current">
-              <span>5</span>
+              <span class="your-points">5</span>
             </div>
             <div class="uk-width-expand">
               <p class="test__result-title uk-margin-bottom">Риск развития СД 2 типа <span>ОЧЕНЬ ВЫСОКИЙ</span></p>

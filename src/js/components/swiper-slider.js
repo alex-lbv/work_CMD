@@ -4,36 +4,44 @@ $(document).ready(function () {
 		spaceBetween: 100,
 		touchRatio: 0,
 		navigation: {
-			nextEl: '.swiper-next',
+			nextEl: '.swiper-next'
 		},
 		breakpoints: {
 			1200: {
-				autoHeight: true,
+				autoHeight: true
 			}
-		},
+		}
 	});
-
 	var swiperTest = new Swiper('.test__container', {
 		spaceBetween: 100,
 		touchRatio: 0,
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.swiper-pagination'
 		},
 		navigation: {
-			nextEl: '.swiper-next',
+			nextEl: '.swiper-next'
 		},
 		breakpoints: {
 			1200: {
-				autoHeight: true,
+				autoHeight: true
 			}
 		},
 		on: {
-			init: function () {
-				console.log('swiper initialized');
+			init: function init() {
+				this.allowSlideNext = false;
 			},
-			slideChange: function () {
-				console.log('slide changed');
+			slideChange: function slideChange() {
+				this.allowSlideNext = false;
 			},
-		},
+			
+			reachEnd: function reachEnd() {
+				$('.swiper-next').addClass('uk-hidden');
+				$('.test-end').removeClass('uk-hidden');
+			},
+		}
+	});
+
+	$('body').on('click', '.swiper-slide-active label', function () {
+		swiperTest.allowSlideNext = true;
 	});
 });

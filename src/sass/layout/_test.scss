@@ -302,4 +302,14 @@
 		}
 	}
 
+	.test-end {
+		position: relative;
+		z-index: 5;
+		pointer-events: none;
+
+		&.active-1.active-2 {
+			pointer-events: inherit;
+		}
+	}
+
 }
