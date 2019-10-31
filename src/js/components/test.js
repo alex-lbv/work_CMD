@@ -36,7 +36,15 @@ function testResult() {
     $('.test__result-5').removeClass('uk-hidden');
   }
   $('.your-points').html(total);
+
 };
+
+$(total).on('change', function () {
+  val = num2str($(this).val(), ['балл', 'балла', 'баллов']);
+  $('.your-points-word').text(val);
+});
+
+
 
 $("#height").keydown(function (e) {
   $('.test-end').addClass('active-2');
