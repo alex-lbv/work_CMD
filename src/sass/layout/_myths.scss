@@ -34,7 +34,7 @@
 			&:hover {
 				color: #ffffff;
 				border-color: transparent;
-				background-color: #f8485e;;
+				background-color: #18bbf0;
 			}
 		}
 
@@ -71,6 +71,7 @@
 
 	&__text-blue {
 		margin-bottom: 10px;
+		font: 700 18px/24px Manrope;
 		color: #578ad6;
 	}
 
@@ -83,4 +84,17 @@
 			max-width: 300px;
 		}
 	}
+
+	.myths-swiper-next {
+		display: none;
+
+		
+
+	}
+
+	.uk-hidden + .myths-swiper-next  {
+		display: block;
+	}
+
+	
 }

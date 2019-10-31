@@ -128,13 +128,13 @@
 	}
 
 	.btn {
-		padding: 19px 15px 20px;
+		padding: 17px 15px 15px;
 		max-width: 265px;
 		color: #ffffff;
 		background-color: #00a9e0;
 
 		&:hover {
-			background-color: #f8485e;
+			background-color: #18bbf0;
 		}
 
 		@include screen(xl) {
