@@ -2,11 +2,11 @@
 	font: normal 16px/24px Manrope;
 
 	@include screen(xl) {
-		padding: 10px 0 40px;
+		padding: 20px 0 40px;
 	}
 
 	@include screen(l) {
-		padding: 10px 0 85px;
+		padding: 30px 0 85px;
 	}
 
 	ol {

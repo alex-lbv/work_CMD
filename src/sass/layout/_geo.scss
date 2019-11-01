@@ -7,13 +7,24 @@
 		padding: 85px 0 20px;
 	}
 
+	.uk-container {
+		@include screen(xl) {
+			padding: 0;
+		}
+	}
+
 	.subtitle {
 		margin-bottom: 60px;
 		text-align: center;
+
+		@include screen(xl) {
+			padding: 0 15px;
+		}
 	}
 
 	.uk-tab {
 		a {
+			padding: 0 20px 15px;
 			font: normal 16px/24px Manrope;
 			text-transform: unset;
 			color: #000000;
@@ -24,14 +35,23 @@
 		}
 
 		&>.uk-active>a {
-			border-color: #00b388;
+			border-bottom: 2px solid #00b388;
 		}
+
+		li:not(:first-of-type) {
+			padding: 0;
+		}
+	}
+
+	.uk-switcher {
+		margin-top: 30px;
 	}
 
 	iframe {
 		width: 100%;
 
 		@include screen(xl) {
+			padding: 0 15px;
 			height: 615px;
 		}
 	}

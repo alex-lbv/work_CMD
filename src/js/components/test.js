@@ -39,13 +39,6 @@ function testResult() {
 
 };
 
-$(total).on('change', function () {
-  val = num2str($(this).val(), ['балл', 'балла', 'баллов']);
-  $('.your-points-word').text(val);
-});
-
-
-
 $("#height").keydown(function (e) {
   $('.test-end').addClass('active-2');
 });

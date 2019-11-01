@@ -1,6 +1,11 @@
 $(document).ready(function () {
 
 	var swiperTest = new Swiper('.test__container', {
+		autoHeight: true,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true
+		},
 		spaceBetween: 100,
 		touchRatio: 0,
 		pagination: {
@@ -21,7 +26,7 @@ $(document).ready(function () {
 			slideChange: function slideChange() {
 				this.allowSlideNext = false;
 			},
-			
+
 			reachEnd: function reachEnd() {
 				$('.swiper-next').addClass('uk-hidden');
 				$('.test-end').removeClass('uk-hidden');

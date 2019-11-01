@@ -60,7 +60,8 @@
 
 	&__title {
 		@include screen(xl) {
-			font: normal 20px/28px Manrope;
+			align-self: flex-start;
+			font: 500 20px/28px Manrope;
 		}
 
 		@include screen(l) {

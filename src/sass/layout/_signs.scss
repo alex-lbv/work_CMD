@@ -56,7 +56,7 @@
 	ul {
 		&:first-of-type {
 			@include screen(xl) {
-				margin-bottom: 50px;
+				margin-bottom: 40px;
 			}
 
 			@include screen(l) {
@@ -69,9 +69,13 @@
 		align-items: center;
 		text-align: center;
 
+		@include screen(xl) {
+			padding: 0 15px;
+		}
+
 		&:not(:last-of-type) {
 			@include screen(xl) {
-				margin-bottom: 50px;
+				margin-bottom: 40px;
 			}
 
 			@include screen(l) {
@@ -89,7 +93,7 @@
 			border-radius: 50%;
 
 			@include screen(xl) {
-				margin-bottom: 25px;
+				margin-bottom: 15px;
 			}
 
 			@include screen(l) {

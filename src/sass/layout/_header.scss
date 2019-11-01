@@ -35,7 +35,7 @@
 
 		@include screen (xl) {
 			padding: 15px 0;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 		}
 
 		@include screen (l) {
@@ -77,7 +77,7 @@
 		z-index: 1;
 
 		@include screen(xl) {
-			padding: 0 0 40px;
+			padding: 0 0 72px;
 		}
 
 		@include screen(l) {
@@ -136,9 +136,15 @@
 		&:hover {
 			background-color: #18bbf0;
 		}
+	}
 
+	&__logo {
 		@include screen(xl) {
-			margin: auto;
+			display: block;
 		}
+	}
+
+	&__contact {
+		font: 600 16px/normal Manrope !important;
 	}
 }

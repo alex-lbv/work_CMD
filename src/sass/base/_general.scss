@@ -43,6 +43,12 @@ img {
     font: 700 36px/40px Manrope;
   }
 
+  br {
+    @include screen(l) {
+      display: none;
+    }
+  }
+
   &--light-blue {
     span {
       color: #00a9e0;

@@ -2,22 +2,19 @@
 	padding: 30px 0;
 	background-color: #f2f6fe;
 
-	.uk-container>div {
-		@include screen(x) {
-			flex-direction: column;
+	span {
+		display: inline-block;
+		font: normal 14px/24px Manrope;
+		color: #999999;
+
+		@include screen(xl) {
+			text-align: center;
 		}
 	}
 
-	span {
-		display: inline-block;
-		margin-right: 30px;
-		font: normal 14px/24px Manroe;
-		color: #999999;
-	}
-
 	&__socials {
-		@include screen(x) {
-			margin-top: 30px;
+		@include screen(xl) {
+			margin-bottom: 30px;
 		}
 
 		li {

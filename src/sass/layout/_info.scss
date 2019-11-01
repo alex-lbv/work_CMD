@@ -53,13 +53,27 @@
 		}
 
 		span {
-			font: 700 36px/normal Manrope;
 			color: #003594;
+
+			@include screen(xl) {
+				font: 700 27px/normal Manrope;
+			}
+
+			@include screen(l) {
+				font: 700 36px/normal Manrope;
+			}
 		}
 
 		p {
-			font: normal 24px/32px Manrope;
 			color: #578ad6;
+
+			@include screen(xl) {
+				font: normal 18px/26px Manrope;
+			}
+
+			@include screen(l) {
+				font: normal 24px/32px Manrope;
+			}
 		}
 	}
 }

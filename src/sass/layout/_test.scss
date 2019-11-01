@@ -4,11 +4,11 @@
 	background-color: #003594;
 
 	@include screen(xl) {
-		padding: 60px 0;
+		padding: 60px 0 40px;
 	}
 
 	@include screen(l) {
-		padding: 85px 0;
+		padding: 85px 0 80px;
 	}
 
 	&::after {
@@ -262,7 +262,7 @@
 				height: 184px;
 			}
 
-			span {
+			p {
 				position: relative;
 
 				@include screen(xl) {
@@ -273,7 +273,7 @@
 					font: 700 80px/20px Manrope;
 				}
 
-				&::after {
+				span {
 					content: "баллов";
 					position: absolute;
 					left: 0;
@@ -289,6 +289,50 @@
 						font: 700 22px/24px Manrope;
 					}
 				}
+			}
+		}
+
+		&-1 {
+			.your-points {
+				color: #00b388;
+			}
+
+			.test__result-title span {
+				color: #00b388;
+			}
+
+			.test__result-current {
+				border-color: #00b388;
+			}
+		}
+
+		&-2,
+		&-3 {
+			.your-points {
+				color: #f87c56;
+			}
+
+			.test__result-title span {
+				color: #f87c56;
+			}
+
+			.test__result-current {
+				border-color: #f87c56;
+			}
+		}
+
+		&-4,
+		&-5 {
+			.your-points {
+				color: #f8485e;
+			}
+
+			.test__result-title span {
+				color: #f8485e;
+			}
+
+			.test__result-current {
+				border-color: #f8485e;
 			}
 		}
 	}
@@ -326,5 +370,20 @@
 				display: none;
 			}
 		}
+	}
+
+	&__btn-result {
+		@include screen(xl) {
+			margin-top: 5px !important;
+		}
+
+		@include screen(l) {
+			margin-top: 5px !important;
+		}
+	}
+
+	&__result-text-small {
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
