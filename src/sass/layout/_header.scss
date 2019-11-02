@@ -27,6 +27,28 @@
 			background: url("../img/pic/bg/bg-top.png") no-repeat;
 			background-size: cover;
 		}
+
+		@media (min-width: 968px) and (max-width: 1023px) {
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 100%;
+			height: 100%;
+			background: url("../img/pic/bg/bg-top.png") no-repeat;
+			background-size: cover;
+		}
+
+		@media (min-width: 1024px) and (max-width: 1279px) {
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 968px;
+			height: 100%;
+			background: url("../img/pic/bg/bg-top.png") no-repeat;
+			background-size: contain;
+		}
 	}
 
 	&__top {
@@ -34,6 +56,7 @@
 		z-index: 1;
 
 		@include screen (xl) {
+			align-items: flex-start;
 			padding: 15px 0;
 			margin-bottom: 20px;
 		}
@@ -41,6 +64,14 @@
 		@include screen (l) {
 			padding: 45px 0 0;
 			margin-bottom: 60px;
+		}
+
+		@media (max-width: 967px) {
+			flex-direction: column;
+		}
+
+		@media (min-width: 968px) {
+			align-items: center;
 		}
 
 		a {
@@ -52,9 +83,11 @@
 				border-color: #ffffff;
 			}
 
+			@media (max-width: 967px) {
+				margin-bottom: 20px;
+			}
 
 			@include screen(xl) {
-				margin-bottom: 20px;
 				text-transform: uppercase;
 				font: normal 16px/normal Manrope;
 			}
@@ -65,7 +98,7 @@
 		}
 
 		img {
-			@include screen(xl) {
+			@media (max-width: 967px) {
 				width: 190px;
 				height: 30px;
 			}
@@ -84,8 +117,12 @@
 			padding: 0 0 135px 450px;
 		}
 
+		@media (min-width: 968px) and (max-width: 1279px) {
+			padding: 0 0 135px 355px;
+		}
+
 		br {
-			@include screen(xl) {
+			@include screen(x) {
 				display: none;
 			}
 		}
@@ -101,6 +138,11 @@
 			@include screen(l) {
 				margin-bottom: 65px;
 				font: 700 86px/96px Manrope;
+			}
+
+			@media (min-width: 968px) and (max-width: 1279px) {
+				margin-bottom: 40px;
+				font: 700 80px/96px Manrope;
 			}
 
 			span {
@@ -146,5 +188,22 @@
 
 	&__contact {
 		font: 600 16px/normal Manrope !important;
+	}
+
+	&__menu {
+		@media (max-width: 1023px) {
+			display: none;
+		}
+
+		@media (min-width: 968px) and (max-width: 1079px) {}
+
+		@media (min-width: 1024px) and (max-width: 1279px) {
+			width: 60% !important;
+		}
+
+		a {
+			text-transform: none;
+			font: normal 15px/normal Manrope;
+		}
 	}
 }

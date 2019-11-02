@@ -88,14 +88,54 @@
 
 	.myths-swiper-next {
 		display: none;
-
-		
-
 	}
 
-	.uk-hidden + .myths-swiper-next  {
+	.uk-hidden+.myths-swiper-next {
 		display: block;
 	}
 
-	
+
+	&__container {
+		.swiper-slide {
+
+			@media (min-width: 968px) and (max-width: 1279px) {
+				flex-direction: row !important;
+			}
+
+			&__container {
+				@media (max-width: 967px) {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+
+	.swiper-slide-image-desktope {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			display: block !important;
+		}
+	}
+
+	.swiper-slide-image-mobile {
+		@media (min-width: 968px) {
+			display: none !important;
+		}
+	}
+
+	&__top-text {
+		@media (min-width: 968px) {
+			flex-direction: row;
+			
+
+			.myths__number {
+				margin: 0 !important;
+				margin-right: 30px !important;
+			}
+
+			.myths__title {
+				align-self: center;
+			}
+		}
+	}
+
 }

@@ -11,8 +11,12 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
 
-  @include screen(xl) {
+  @include screen(x) {
     font: normal 16px/24px Manrope;
+  }
+
+  @include screen(sm) {
+    font: normal 18px/28px Manrope;
   }
 
   @include screen(l) {
@@ -35,8 +39,12 @@ img {
 }
 
 .subtitle {
-  @include screen(xl) {
+  @include screen(x) {
     font: 700 28px/32px Manrope;
+  }
+
+  @include screen(sm) {
+    font: 700 36px/40px Manrope;
   }
 
   @include screen(l) {
@@ -70,4 +78,20 @@ img {
 
 .uk-modal {
   background: transparent !important;
+}
+
+
+.uk-container {
+  @media (min-width: 968px) and (max-width: 1024px) {
+    max-width: 998px !important;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    max-width: 998px !important;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
 }

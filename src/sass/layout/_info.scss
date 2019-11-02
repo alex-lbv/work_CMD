@@ -76,4 +76,20 @@
 			}
 		}
 	}
+
+	&__wrapper {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			flex-direction: row !important;
+		}
+
+		@media (max-width: 967px) {
+			.info__left {
+				width: 100% !important;
+			}
+
+			.info__right {
+				width: 100% !important;
+			}
+		}
+	}
 }

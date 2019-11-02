@@ -7686,7 +7686,7 @@ iframe.uk-cover {
 }
 
 /* Tablet landscape and smaller */
-@media (max-width: 1279px) { 
+@media (max-width: 1279px) {
   .uk-visible\@l {
     display: none !important;
   }
@@ -7834,9 +7834,35 @@ iframe.uk-cover {
 }
 
 /* CUSTOM */
+.uk-flex-row {
+  &\@s {
+    @include screen(xl) {
+      flex-direction: row !important;
+    }
+  }
+
+  &\@m {
+    @include screen(s) {
+      flex-direction: row !important;
+    }
+  }
+
+  &\@l {
+    @include screen(l) {
+      flex-direction: row !important;
+    }
+  }
+}
+
 .uk-flex-column {
   &\@s {
     @include screen(xl) {
+      flex-direction: column;
+    }
+  }
+
+  &\@m {
+    @include screen(s) {
       flex-direction: column;
     }
   }
@@ -7855,6 +7881,12 @@ iframe.uk-cover {
     }
   }
 
+  &\@m {
+    @include screen(s) {
+      flex-direction: column-reverse;
+    }
+  }
+
   &\@l {
     @include screen(l) {
       flex-direction: column-reverse;
@@ -7865,6 +7897,12 @@ iframe.uk-cover {
 .uk-flex-bottom {
   &\@s {
     @include screen(xl) {
+      align-items: flex-end;
+    }
+  }
+
+  &\@m {
+    @include screen(s) {
       align-items: flex-end;
     }
   }
@@ -7894,6 +7932,12 @@ iframe.uk-cover {
     }
   }
 
+  &\@m {
+    @include screen(s) {
+      padding-top: 0;
+    }
+  }
+
   &\@l {
     @include screen(l) {
       padding-top: 0;
@@ -7906,6 +7950,12 @@ iframe.uk-cover {
 
   &\@s {
     @include screen(xl) {
+      padding-bottom: 0;
+    }
+  }
+
+  &\@m {
+    @include screen(s) {
       padding-bottom: 0;
     }
   }
@@ -7926,6 +7976,12 @@ iframe.uk-cover {
     }
   }
 
+  &\@m {
+    @include screen(s) {
+      padding-right: 0;
+    }
+  }
+
   &\@l {
     @include screen(l) {
       padding-right: 0;
@@ -7942,6 +7998,12 @@ iframe.uk-cover {
     }
   }
 
+  &\@m {
+    @include screen(s) {
+      padding-left: 0;
+    }
+  }
+
   &\@l {
     @include screen(l) {
       padding-left: 0;
@@ -7952,6 +8014,12 @@ iframe.uk-cover {
 .uk-overflow-hidden {
   &\@s {
     @include screen(xl) {
+      overflow: hidden;
+    }
+  }
+
+  &\@m {
+    @include screen(s) {
       overflow: hidden;
     }
   }
@@ -7973,6 +8041,12 @@ iframe.uk-cover {
       }
     }
 
+    &\@m {
+      @include screen(s) {
+        padding-top: 20px;
+      }
+    }
+
     &\@l {
       @include screen(l) {
         padding-top: 20px;
@@ -7983,6 +8057,12 @@ iframe.uk-cover {
   &-bottom {
     &\@s {
       @include screen(xl) {
+        padding-bottom: 20px;
+      }
+    }
+
+    &\@m {
+      @include screen(s) {
         padding-bottom: 20px;
       }
     }
@@ -8001,6 +8081,12 @@ iframe.uk-cover {
       }
     }
 
+    &\@m {
+      @include screen(s) {
+        padding-left: 20px;
+      }
+    }
+
     &\@l {
       @include screen(l) {
         padding-left: 20px;
@@ -8011,6 +8097,12 @@ iframe.uk-cover {
   &-right {
     &\@s {
       @include screen(xl) {
+        padding-right: 20px;
+      }
+    }
+
+    &\@m {
+      @include screen(s) {
         padding-right: 20px;
       }
     }
@@ -8031,6 +8123,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          padding-top: 10px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           padding-top: 10px !important;
@@ -8041,6 +8139,12 @@ iframe.uk-cover {
     &-bottom {
       &\@s {
         @include screen(xl) {
+          padding-bottom: 10px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           padding-bottom: 10px !important;
         }
       }
@@ -8059,6 +8163,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          padding-left: 10px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           padding-left: 10px !important;
@@ -8069,6 +8179,12 @@ iframe.uk-cover {
     &-right {
       &\@s {
         @include screen(xl) {
+          padding-right: 10px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           padding-right: 10px !important;
         }
       }
@@ -8090,6 +8206,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          padding-top: 40px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           padding-top: 40px !important;
@@ -8100,6 +8222,12 @@ iframe.uk-cover {
     &-bottom {
       &\@s {
         @include screen(xl) {
+          padding-bottom: 40px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           padding-bottom: 40px !important;
         }
       }
@@ -8118,6 +8246,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          padding-left: 40px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           padding-left: 40px !important;
@@ -8128,6 +8262,12 @@ iframe.uk-cover {
     &-right {
       &\@s {
         @include screen(xl) {
+          padding-right: 40px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           padding-right: 40px !important;
         }
       }
@@ -8149,6 +8289,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          padding-top: 60px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           padding-top: 60px !important;
@@ -8159,6 +8305,12 @@ iframe.uk-cover {
     &-bottom {
       &\@s {
         @include screen(xl) {
+          padding-bottom: 60px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           padding-bottom: 60px !important;
         }
       }
@@ -8177,6 +8329,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          padding-left: 60px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           padding-left: 60px !important;
@@ -8187,6 +8345,12 @@ iframe.uk-cover {
     &-right {
       &\@s {
         @include screen(xl) {
+          padding-right: 60px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           padding-right: 60px !important;
         }
       }
@@ -8210,6 +8374,12 @@ iframe.uk-cover {
       }
     }
 
+    &\@m {
+      @include screen(s) {
+        margin-top: 20px;
+      }
+    }
+
     &\@l {
       @include screen(l) {
         margin-top: 20px;
@@ -8220,6 +8390,12 @@ iframe.uk-cover {
   &-bottom {
     &\@s {
       @include screen(xl) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &\@m {
+      @include screen(s) {
         margin-bottom: 20px;
       }
     }
@@ -8238,6 +8414,12 @@ iframe.uk-cover {
       }
     }
 
+    &\@m {
+      @include screen(s) {
+        margin-left: 20px;
+      }
+    }
+
     &\@l {
       @include screen(l) {
         margin-left: 20px;
@@ -8248,6 +8430,12 @@ iframe.uk-cover {
   &-right {
     &\@s {
       @include screen(xl) {
+        margin-right: 20px;
+      }
+    }
+
+    &\@m {
+      @include screen(s) {
         margin-right: 20px;
       }
     }
@@ -8268,6 +8456,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          margin-top: 10px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           margin-top: 10px !important;
@@ -8278,6 +8472,12 @@ iframe.uk-cover {
     &-bottom {
       &\@s {
         @include screen(xl) {
+          margin-bottom: 10px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           margin-bottom: 10px !important;
         }
       }
@@ -8296,6 +8496,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          margin-left: 10px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           margin-left: 10px !important;
@@ -8306,6 +8512,12 @@ iframe.uk-cover {
     &-right {
       &\@s {
         @include screen(xl) {
+          margin-right: 10px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           margin-right: 10px !important;
         }
       }
@@ -8327,6 +8539,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          margin-top: 40px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           margin-top: 40px !important;
@@ -8337,6 +8555,12 @@ iframe.uk-cover {
     &-bottom {
       &\@s {
         @include screen(xl) {
+          margin-bottom: 40px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           margin-bottom: 40px !important;
         }
       }
@@ -8355,6 +8579,12 @@ iframe.uk-cover {
         }
       }
 
+      &\@m {
+        @include screen(s) {
+          margin-left: 40px !important;
+        }
+      }
+
       &\@l {
         @include screen(l) {
           margin-left: 40px !important;
@@ -8365,6 +8595,12 @@ iframe.uk-cover {
     &-right {
       &\@s {
         @include screen(xl) {
+          margin-right: 40px !important;
+        }
+      }
+
+      &\@m {
+        @include screen(s) {
           margin-right: 40px !important;
         }
       }
@@ -8380,6 +8616,12 @@ iframe.uk-cover {
 
 .uk-flex-middle {
   &\@s {
+    @include screen(xl) {
+      align-items: center;
+    }
+  }
+
+  &\@m {
     @include screen(xl) {
       align-items: center;
     }

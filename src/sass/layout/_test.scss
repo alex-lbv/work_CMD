@@ -399,4 +399,73 @@
 		font-weight: 600;
 		color: #00b388;
 	}
+
+	&__top {
+		@media (max-width: 967px) {
+			width: 100% !important;
+		}
+
+		@media (min-width: 968px) and (max-width: 1279px) {
+			width: 50% !important;
+		}
+
+		&-wrap {
+			@media (min-width: 968px) and (max-width: 1279px) {
+				flex-direction: row !important;
+				justify-content: space-between;
+			}
+		}
+
+		@media (min-width: 968px) and (max-width: 1279px) {}
+	}
+
+	&__text-gray {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			padding-right: 100px;
+		}
+	}
+
+	&__case {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			flex-direction: row;
+		}
+	}
+
+	&__swiper {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			flex-direction: row;
+		}
+	}
+
+	.swiper-next,
+	.test-end {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			margin-top: 50px;
+		}
+	}
+
+	.test__container {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			width: 100% !important;
+		}
+	}
+
+	.test__question {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			padding-right: 30px;
+		}
+	}
+
+	.test__text {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			padding-right: 30px;
+		}
+	}
+
+	.test__result {
+		input {
+			display: block;
+			max-width: 440px;
+		}
+	}
 }
