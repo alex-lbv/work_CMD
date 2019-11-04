@@ -84,6 +84,10 @@
 		@include screen(xl) {
 			max-width: 300px;
 		}
+
+		@media (min-width: 968px) and (max-width: 1279px) {
+			max-width: 440px;
+		}
 	}
 
 	.myths-swiper-next {
@@ -99,12 +103,23 @@
 		.swiper-slide {
 
 			@media (min-width: 968px) and (max-width: 1279px) {
+
 				flex-direction: row !important;
 			}
 
 			&__container {
 				@media (max-width: 967px) {
 					width: 100% !important;
+				}
+
+				@media (min-width: 968px) and (max-width: 1279px) {
+					width: 50%;
+				}
+
+				&:first-of-type {
+					@media (min-width: 968px) and (max-width: 1279px) {
+						padding-right: 50px;
+					}
 				}
 			}
 		}
@@ -125,7 +140,7 @@
 	&__top-text {
 		@media (min-width: 968px) {
 			flex-direction: row;
-			
+
 
 			.myths__number {
 				margin: 0 !important;
