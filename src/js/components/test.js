@@ -51,8 +51,6 @@ function testResult() {
     $('.test__result-5').removeClass('uk-hidden');
   }
   $('.your-points').html(total + '<span class="your-point-word">'+ num2str(total, ['балл', 'балла', 'баллов'])+'</span>');
-
-
 };
 
 $("#height").keydown(function (e) {
